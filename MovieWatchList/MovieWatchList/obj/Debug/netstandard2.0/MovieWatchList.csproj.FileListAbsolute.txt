@@ -10,3 +10,4 @@ C:\Users\g00331787\source\repos\MovieWatchList\MovieWatchList\MovieWatchList\obj
 C:\Users\g00331787\source\repos\MovieWatchList\MovieWatchList\MovieWatchList\obj\Debug\netstandard2.0\MovieWatchList.dll
 C:\Users\g00331787\source\repos\MovieWatchList\MovieWatchList\MovieWatchList\obj\Debug\netstandard2.0\MovieWatchList.pdb
 C:\Users\g00331787\source\repos\MovieWatchList\MovieWatchList\MovieWatchList\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\g00331787\source\repos\MovieWatchList\MovieWatchList\MovieWatchList\obj\Debug\netstandard2.0\ListPage.xaml.g.cs

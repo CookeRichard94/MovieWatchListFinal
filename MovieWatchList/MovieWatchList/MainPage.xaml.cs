@@ -9,34 +9,16 @@ using Newtonsoft.Json;
 
 namespace MovieWatchList
 {
-    public partial class MainPage : ContentPage
+    public partial class MainPage : TabbedPage
     {
-        List<Movie> movieList;
+
 
         public MainPage()
         {
             InitializeComponent();
-            SetDefaultStuffMethod();
+            this.CurrentPage = this.Children[0];
         }
 
-        private void SetDefaultStuffMethod()
-        {
-            if (movieList == null) movieList = new List<Movie>();
-
-            movieList = MyUtils.ReadMovieListData();
-            // set the data context for the list view
-            lvDogs.ItemsSource = movieList;
-        }
-
-        private void lvMovie_ItemSelected(object sender, SelectedItemChangedEventArgs e)
-        {
-
-        }
-
-        private void btnSaveFile_Clicked(object sender, EventArgs e)
-        {
-            // save the list of dogs to the local application folder
-            MyUtils.SaveDogListData(movieList);
-        }
+        
     }
 }
