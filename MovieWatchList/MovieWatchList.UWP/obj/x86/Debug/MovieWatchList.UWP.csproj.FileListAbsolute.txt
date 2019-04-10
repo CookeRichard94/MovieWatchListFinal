@@ -298,3 +298,5 @@ C:\Users\g00331787\source\repos\MovieWatchList\MovieWatchList\MovieWatchList.UWP
 C:\Users\g00331787\source\repos\MovieWatchList\MovieWatchList\MovieWatchList.UWP\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\g00331787\source\repos\MovieWatchList\MovieWatchList\MovieWatchList.UWP\obj\x86\Debug\Xamarin.Forms.Platform.UAP.pri.xml
 C:\Users\g00331787\source\repos\MovieWatchList\MovieWatchList\MovieWatchList.UWP\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\g00331787\source\repos\MovieWatchList\MovieWatchList\MovieWatchList.UWP\bin\x86\Debug\Newtonsoft.Json.dll
+C:\Users\g00331787\source\repos\MovieWatchList\MovieWatchList\MovieWatchList.UWP\bin\x86\Debug\Newtonsoft.Json.pdb

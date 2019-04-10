@@ -4,11 +4,64 @@
              xmlns:local="clr-namespace:MovieWatchList"
              x:Class="MovieWatchList.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+    <ContentPage.Resources>
+        <DataTemplate x:Key="MovieTemplate">
+            <ViewCell>
+                <StackLayout Margin="2">
+                    <StackLayout Orientation="Horizontal" Margin="2, 1">
+                        <Label Text="Title: " />
+                        <Label Text="{Binding Path=Title}" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="2, 1">
+                        <Label Text="Year: " />
+                        <Label Text="{Binding Path=Year}" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="2, 1">
+                        <Label Text="Year: " />
+                        <Label Text="{Binding Path=Director}" />
+                    </StackLayout>
+                 </StackLayout>
+            </ViewCell>
+        </DataTemplate>
+        
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="3*" />
+        </Grid.ColumnDefinitions>
+
+        <Label Text="Welcome to the Movie Database"
+               HorizontalOptions="Center" Margin="0, 5"
+               Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+
+        <!--<ListView x:Name="lvDogs" Margin="3, 3, 3, 0"
+                  ItemSelected="lvDogs_ItemSelected"
+                  Grid.Row="1" Grid.Column="0">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                </DataTemplate>
+            </ListView.ItemTemplate> 
+        </ListView>-->
+
+        <ListView x:Name="lvDogs" Margin="3, 3, 3, 0"
+                  ItemSelected="lvMovie_ItemSelected"
+                  Grid.Row="1" Grid.Column="0"
+                  ItemTemplate="{StaticResource MovieTemplate}" />
+
+        <StackLayout x:Name="slButtons" Orientation="Horizontal" 
+                     Margin="0, 2" Grid.Row="2" 
+                     Grid.Column="1">
+            <Button x:Name="btnSaveFile" Text="Save" 
+                    Clicked="btnSaveFile_Clicked" Margin="2" />
+        </StackLayout>
+
+    </Grid>
 
 </ContentPage>
