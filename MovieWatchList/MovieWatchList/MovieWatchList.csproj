@@ -11,10 +11,12 @@
 
   <ItemGroup>
     <None Remove="Data\Movies.txt" />
+    <None Remove="Data\Watch.txt" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Data\Movies.txt" />
+    <EmbeddedResource Include="Data\Watch.txt" />
   </ItemGroup>
 
   <ItemGroup>

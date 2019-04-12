@@ -2,11 +2,61 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MovieWatchList.WatchPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+    <ContentPage.Resources>
+        <Style x:Key="ListStyle" TargetType="ListView">
+            <Setter Property="BackgroundColor" Value="PaleGoldenrod"/>
+        </Style>
+        <Style x:Key="MovieStyle" TargetType="Label">
+            <Setter Property="FontSize" Value="Micro"/>
+            <Setter Property="TextColor" Value="Black"/>
+        </Style>
+        <DataTemplate x:Key="MovieTemplate">
+            <ViewCell>
+                <StackLayout Margin="2">
+                    <StackLayout Orientation="Horizontal" Margin="2, 1">
+                        <Label Text="Title: " Style="{StaticResource MovieStyle}" />
+                        <Label Text="{Binding Path=Title}" Style="{StaticResource MovieStyle}"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="2, 1">
+                        <Label Text="Year: " Style="{StaticResource MovieStyle}"/>
+                        <Label Text="{Binding Path=Year}" Style="{StaticResource MovieStyle}"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="2, 1">
+                        <Label Text="Director: " Style="{StaticResource MovieStyle}"/>
+                        <Label Text="{Binding Path=Director}" Style="{StaticResource MovieStyle}"/>
+                    </StackLayout>
+                </StackLayout>
+            </ViewCell>
+        </DataTemplate>
+
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+
+        <Label Text="Welcome to the Movie Database"
+               HorizontalOptions="Center" Margin="0, 5"
+               Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+
+        <ListView x:Name="lvMovies" Margin="3, 3, 3, 0"
+                  ItemSelected="lvMovie_ItemSelected"
+                  Grid.Row="1" Grid.Column="0"
+                  ItemTemplate="{StaticResource MovieTemplate}" 
+                  Style="{StaticResource ListStyle}"/>
+
+        <Image Source="Images/film.png" Grid.Row="1" Grid.Column="1" HorizontalOptions="FillAndExpand"
+               VerticalOptions="FillAndExpand" Aspect="AspectFit"/>
+
+        <StackLayout >
+            <Button Text="Add A Movie to Watch"/>
         </StackLayout>
-    </ContentPage.Content>
+    </Grid>
 </ContentPage>

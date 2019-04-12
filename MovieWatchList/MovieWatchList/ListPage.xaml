@@ -38,8 +38,8 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="2*" />
             <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="2*" />
         </Grid.ColumnDefinitions>
 
         <Label Text="Welcome to the Movie Database"
@@ -52,12 +52,11 @@
                   ItemTemplate="{StaticResource MovieTemplate}" 
                   Style="{StaticResource ListStyle}"/>
 
-        <StackLayout x:Name="slButtons" Orientation="Horizontal" 
-                     Margin="0, 2" Grid.Row="2" 
-                     Grid.Column="1">
-            <Button x:Name="btnSaveFile" Text="Save" 
-                    Clicked="btnSaveFile_Clicked" Margin="2" />
-        </StackLayout>
+        <Image Source="Images/film.png" Grid.Row="1" Grid.Column="1" HorizontalOptions="FillAndExpand"
+               VerticalOptions="FillAndExpand" Aspect="AspectFit"/>
 
+        <StackLayout >
+            <Button Text="Add Movie"/>
+        </StackLayout>
     </Grid>
 </ContentPage>

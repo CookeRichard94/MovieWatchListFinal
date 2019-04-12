@@ -10,7 +10,8 @@ namespace Utils
 {
     class MyUtils
     {
-        public const string JSON_FILE = "Movies.txt";
+        public const string JSON_MOVIE_FILE = "Movies.txt";
+        public const string JSON_WATCH_FILE = "Watch.txt";
 
         public static List<Movie> ReadMovieListData()
         {
@@ -21,7 +22,7 @@ namespace Utils
             {
                 string path = Environment.GetFolderPath(
                                 Environment.SpecialFolder.LocalApplicationData);
-                string filename = Path.Combine(path, JSON_FILE);
+                string filename = Path.Combine(path, JSON_MOVIE_FILE);
                 using (var reader = new StreamReader(filename))
                 {
                     jsonText = reader.ReadToEnd();
@@ -47,12 +48,47 @@ namespace Utils
             return myList;
         }
 
+        public static List<Movie> ReadWatchListData()
+        {
+            List<Movie> myList = new List<Movie>();
+            string jsonText;
+
+            try  // reading the localApplicationFolder first
+            {
+                string path = Environment.GetFolderPath(
+                                Environment.SpecialFolder.LocalApplicationData);
+                string filename = Path.Combine(path, JSON_WATCH_FILE);
+                using (var reader = new StreamReader(filename))
+                {
+                    jsonText = reader.ReadToEnd();
+                    // need json library
+                }
+            }
+            catch // fallback is to read the default file
+            {
+                var assembly = IntrospectionExtensions.GetTypeInfo(
+                                                typeof(MainPage)).Assembly;
+                // create the stream
+                Stream stream = assembly.GetManifestResourceStream(
+                                    "MovieWatchList.Data.Watch.txt");
+                using (var reader = new StreamReader(stream))
+                {
+                    jsonText = reader.ReadToEnd();
+                    // include JSON library now
+                }
+            }
+
+            myList = JsonConvert.DeserializeObject<List<Movie>>(jsonText);
+
+            return myList;
+        }
+
         public static void SaveMovieListData(List<Movie> saveList)
         {
             // need the path to the file
             string path = Environment.GetFolderPath(
                 Environment.SpecialFolder.LocalApplicationData);
-            string filename = Path.Combine(path, JSON_FILE);
+            string filename = Path.Combine(path, JSON_MOVIE_FILE);
             // use a stream writer to write the list
             using (var writer = new StreamWriter(filename, false))
             {

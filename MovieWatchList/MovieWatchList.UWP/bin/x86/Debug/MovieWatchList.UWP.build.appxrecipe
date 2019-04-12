@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Machine>CRBYOD10</Machine>
-    <WindowsUser>g00331787</WindowsUser>
+    <WindowsUser>G00331787</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>ec0cc741-fd3e-485c-81be-68815c480690</PackageIdentityName>
     <PackageIdentityPublisher>CN=7667e74a-505f-4854-92da-5ae49bbda4b8</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\g00331787.GMADTREE\Desktop\New folder\MovieWatchList\MovieWatchList\MovieWatchList.UWP\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\g00331787.GMADTREE\Documents\MovieWatchList\MovieWatchList\MovieWatchList.UWP\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\g00331787.GMADTREE\Desktop\New folder\MovieWatchList\MovieWatchList\MovieWatchList.UWP\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\g00331787.GMADTREE\Documents\MovieWatchList\MovieWatchList\MovieWatchList.UWP\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\g00331787.GMADTREE\Desktop\New folder\MovieWatchList\MovieWatchList\MovieWatchList.UWP\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\g00331787.GMADTREE\Documents\MovieWatchList\MovieWatchList\MovieWatchList.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Desktop\New folder\MovieWatchList\MovieWatchList\MovieWatchList.UWP\bin\x86\Debug\MovieWatchList.UWP.exe">
+    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Documents\MovieWatchList\MovieWatchList\MovieWatchList.UWP\bin\x86\Debug\MovieWatchList.UWP.exe">
       <PackagePath>entrypoint\MovieWatchList.UWP.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\.nuget\packages\newtonsoft.json\12.0.1\lib\netstandard2.0\Newtonsoft.Json.dll">
@@ -535,127 +535,130 @@
     <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\.nuget\packages\xamarin.forms\3.1.0.697729\lib\uap10.0\Xamarin.Forms.Xaml.dll">
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Desktop\New folder\MovieWatchList\MovieWatchList\MovieWatchList\bin\Debug\netstandard2.0\MovieWatchList.dll">
+    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Documents\MovieWatchList\MovieWatchList\MovieWatchList\bin\Debug\netstandard2.0\MovieWatchList.dll">
       <PackagePath>MovieWatchList.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Desktop\New folder\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\LargeTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Documents\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Desktop\New folder\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\LargeTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Documents\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\LargeTile.scale-200.png">
       <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Desktop\New folder\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\LargeTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Documents\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\LargeTile.scale-400.png">
       <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Desktop\New folder\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\SmallTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Documents\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\SmallTile.scale-100.png">
       <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Desktop\New folder\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\SmallTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Documents\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\SmallTile.scale-200.png">
       <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Desktop\New folder\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\SmallTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Documents\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\SmallTile.scale-400.png">
       <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Desktop\New folder\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Documents\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Desktop\New folder\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Documents\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Desktop\New folder\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\SplashScreen.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Documents\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\SplashScreen.scale-400.png">
       <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Desktop\New folder\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\Square150x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Documents\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\Square150x150Logo.scale-100.png">
       <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Desktop\New folder\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Documents\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Desktop\New folder\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\Square150x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Documents\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\Square150x150Logo.scale-400.png">
       <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Desktop\New folder\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Documents\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Desktop\New folder\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Documents\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Desktop\New folder\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Documents\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Desktop\New folder\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\Square44x44Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Documents\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\Square44x44Logo.scale-100.png">
       <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Desktop\New folder\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Documents\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Desktop\New folder\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\Square44x44Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Documents\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\Square44x44Logo.scale-400.png">
       <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Desktop\New folder\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\Square44x44Logo.targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Documents\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\Square44x44Logo.targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Desktop\New folder\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\Square44x44Logo.targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Documents\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\Square44x44Logo.targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Desktop\New folder\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\Square44x44Logo.targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Documents\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\Square44x44Logo.targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Desktop\New folder\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Documents\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Desktop\New folder\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\StoreLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Documents\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\StoreLogo.scale-200.png">
       <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Desktop\New folder\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\StoreLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Documents\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\StoreLogo.scale-400.png">
       <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Desktop\New folder\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\Wide310x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Documents\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\Wide310x150Logo.scale-100.png">
       <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Desktop\New folder\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Documents\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Desktop\New folder\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\Wide310x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Documents\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Assets\Wide310x150Logo.scale-400.png">
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Desktop\New folder\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Documents\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Images\film.png">
+      <PackagePath>Images\film.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Documents\MovieWatchList\MovieWatchList\MovieWatchList.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Desktop\New folder\MovieWatchList\MovieWatchList\MovieWatchList.UWP\bin\x86\Debug\MovieWatchList.UWP.xr.xml">
+    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Documents\MovieWatchList\MovieWatchList\MovieWatchList.UWP\bin\x86\Debug\MovieWatchList.UWP.xr.xml">
       <PackagePath>MovieWatchList.UWP.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Desktop\New folder\MovieWatchList\MovieWatchList\MovieWatchList.UWP\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Documents\MovieWatchList\MovieWatchList\MovieWatchList.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Desktop\New folder\MovieWatchList\MovieWatchList\MovieWatchList.UWP\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Documents\MovieWatchList\MovieWatchList\MovieWatchList.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
@@ -697,11 +700,11 @@
     <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\.nuget\packages\xamarin.forms\3.1.0.697729\lib\uap10.0\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml">
       <PackagePath>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Desktop\New folder\MovieWatchList\MovieWatchList\MovieWatchList.UWP\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Documents\MovieWatchList\MovieWatchList\MovieWatchList.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Desktop\New folder\MovieWatchList\MovieWatchList\MovieWatchList.UWP\bin\x86\Debug\Core\MovieWatchList.UWP.exe">
+    <AppxPackagedFile Include="C:\Users\g00331787.GMADTREE\Documents\MovieWatchList\MovieWatchList\MovieWatchList.UWP\bin\x86\Debug\Core\MovieWatchList.UWP.exe">
       <PackagePath>MovieWatchList.UWP.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

@@ -7573,11 +7573,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "\\\\gwstudent.gmadtree.gmit.ie\\scistudss\\G00331787\\Documents\\MovieWatchList\\MovieWatchList\\MovieWatchList.UWP\\MovieWatchList.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\g00331787.GMADTREE\\Documents\\MovieWatchList\\MovieWatchList\\MovieWatchList.UWP\\MovieWatchList.UWP.csproj",
       "projectName": "MovieWatchList.UWP",
-      "projectPath": "\\\\gwstudent.gmadtree.gmit.ie\\scistudss\\G00331787\\Documents\\MovieWatchList\\MovieWatchList\\MovieWatchList.UWP\\MovieWatchList.UWP.csproj",
+      "projectPath": "C:\\Users\\g00331787.GMADTREE\\Documents\\MovieWatchList\\MovieWatchList\\MovieWatchList.UWP\\MovieWatchList.UWP.csproj",
       "packagesPath": "C:\\Users\\g00331787.GMADTREE\\.nuget\\packages\\",
-      "outputPath": "\\\\gwstudent.gmadtree.gmit.ie\\scistudss\\G00331787\\Documents\\MovieWatchList\\MovieWatchList\\MovieWatchList.UWP\\obj\\",
+      "outputPath": "C:\\Users\\g00331787.GMADTREE\\Documents\\MovieWatchList\\MovieWatchList\\MovieWatchList.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -7597,8 +7597,8 @@
       "frameworks": {
         "uap10.0.16299": {
           "projectReferences": {
-            "\\\\gwstudent.gmadtree.gmit.ie\\scistudss\\G00331787\\Documents\\MovieWatchList\\MovieWatchList\\MovieWatchList\\MovieWatchList.csproj": {
-              "projectPath": "\\\\gwstudent.gmadtree.gmit.ie\\scistudss\\G00331787\\Documents\\MovieWatchList\\MovieWatchList\\MovieWatchList\\MovieWatchList.csproj"
+            "C:\\Users\\g00331787.GMADTREE\\Documents\\MovieWatchList\\MovieWatchList\\MovieWatchList\\MovieWatchList.csproj": {
+              "projectPath": "C:\\Users\\g00331787.GMADTREE\\Documents\\MovieWatchList\\MovieWatchList\\MovieWatchList\\MovieWatchList.csproj"
             }
           }
         }
