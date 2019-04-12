@@ -1,0 +1,2 @@
+C:\Users\g00331787.GMADTREE\Desktop\New folder\MovieWatchList\MovieWatchList\MovieWatchList.Android\obj\Debug\MonoAndroid81\MovieWatchList.Android.csprojAssemblyReference.cache
+C:\Users\g00331787.GMADTREE\Desktop\New folder\MovieWatchList\MovieWatchList\MovieWatchList.Android\obj\Debug\MonoAndroid81\res.flag
