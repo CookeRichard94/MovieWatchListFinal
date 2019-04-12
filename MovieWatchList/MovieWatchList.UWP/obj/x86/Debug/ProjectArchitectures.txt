@@ -1,1 +1,0 @@
-C:\Users\g00331787\source\repos\MovieWatchList\MovieWatchList\MovieWatchList.UWP\MovieWatchList.UWP.csproj;x86
