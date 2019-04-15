@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MovieWatchList.ListPage">
+    <ContentPage.Resources>
+        <Style x:Key="ListStyle" TargetType="ListView">
+            <Setter Property="BackgroundColor" Value="PaleGoldenrod"/>
+        </Style>
+        <Style x:Key="MovieStyle" TargetType="Label">
+            <Setter Property="FontSize" Value="Micro"/>
+            <Setter Property="TextColor" Value="Black"/>
+        </Style>
+        <Style x:Key="EntryStyle" TargetType="Entry" >
+            <Setter Property="FontSize" Value="Small" />
+            <Setter Property="TextColor" Value="Blue" />
+        </Style>
+        <DataTemplate x:Key="MovieTemplate">
+            <ViewCell>
+                <StackLayout Margin="2">
+                    <StackLayout Orientation="Horizontal" Margin="2, 1">
+                        <Label Text="Title: " Style="{StaticResource MovieStyle}" />
+                        <Label Text="{Binding Path=Title}" Style="{StaticResource MovieStyle}"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="2, 1">
+                        <Label Text="Year: " Style="{StaticResource MovieStyle}"/>
+                        <Label Text="{Binding Path=Year}" Style="{StaticResource MovieStyle}"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="2, 1">
+                        <Label Text="Director: " Style="{StaticResource MovieStyle}"/>
+                        <Label Text="{Binding Path=Director}" Style="{StaticResource MovieStyle}"/>
+                    </StackLayout>
+                </StackLayout>
+            </ViewCell>
+        </DataTemplate>
+
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+
+        <Label Text="Welcome to the Movie Database"
+               HorizontalOptions="Center" Margin="0, 5"
+               Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+
+        <Image x:Name="imgMainPage" Grid.Row="1"
+               Grid.Column="1"  >
+            <Image.Source>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="Android" Value="film.png" />
+                    <On Platform="UWP" Value="Images/film.png" />
+                </OnPlatform>
+            </Image.Source>
+        </Image>
+
+        <ListView x:Name="lvMovies" Margin="3, 3, 3, 0"
+                  ItemSelected="lvMovie_ItemSelected"
+                  Grid.Row="1" Grid.Column="0"
+                  Grid.RowSpan="2"
+                  ItemTemplate="{StaticResource MovieTemplate}" 
+                  Style="{StaticResource ListStyle}"/>
+
+        <StackLayout x:Name="slOneElement" Grid.Row="1" 
+                     Grid.Column="1"
+                     Margin="10">
+            <StackLayout x:Name="slNonEdits">
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Title: " />
+                    <Label x:Name="lblTitle" Text="{Binding Path=Title}" />
+                </StackLayout>
+            </StackLayout>
+            <StackLayout x:Name="slEditable">
+                <StackLayout Orientation="Horizontal" >
+                    <Label Text="Year: " />
+                    <Entry x:Name="entYear" 
+                           Text="{Binding Path=Year}"
+                           HorizontalOptions="FillAndExpand" 
+                           Style="{StaticResource EntryStyle}"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" >
+                    <Label Text="Description: " />
+                    <Entry x:Name="entDescription" 
+                           Text="{Binding Path=Description}"
+                           HorizontalOptions="FillAndExpand" 
+                           VerticalOptions="Fill"
+                           Style="{StaticResource EntryStyle}"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" >
+                    <Label Text="Run Time: " />
+                    <Entry x:Name="entRunTime" 
+                           Text="{Binding Path=RunTime}"
+                           HorizontalOptions="FillAndExpand" 
+                           Style="{StaticResource EntryStyle}"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" >
+                    <Label Text="Country: " />
+                    <Entry x:Name="entCountry" 
+                           Text="{Binding Path=Country}"
+                           HorizontalOptions="FillAndExpand" 
+                           Style="{StaticResource EntryStyle}"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" >
+                    <Label Text="IMDB Rating: " />
+                    <Entry x:Name="entIMDBRating" 
+                           Text="{Binding Path=IMDBRating}"
+                           HorizontalOptions="FillAndExpand" 
+                           Style="{StaticResource EntryStyle}"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" >
+                    <Label Text="Starring: " />
+                    <Entry x:Name="entStarring" 
+                           Text="{Binding Path=Starring}"
+                           HorizontalOptions="FillAndExpand" 
+                           Style="{StaticResource EntryStyle}"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" >
+                    <Label Text="Director: " />
+                    <Entry x:Name="entDirector" 
+                           Text="{Binding Path=Director}"
+                           HorizontalOptions="FillAndExpand" 
+                           Style="{StaticResource EntryStyle}"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" >
+                    <Label Text="Boc Office: " />
+                    <Entry x:Name="entBoxOffice" 
+                           Text="{Binding Path=BoxOffice}"
+                           HorizontalOptions="FillAndExpand" 
+                           Style="{StaticResource EntryStyle}"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+
+        <StackLayout Grid.Row="2" Grid.Column="1">
+            <Button x:Name="SaveButton" Text="Save"/>
+            <Button x:Name="WatchListButton" Text="Add To Watch List" />
+        </StackLayout>
+    </Grid>
+</ContentPage>

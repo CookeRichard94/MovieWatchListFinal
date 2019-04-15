@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MovieWatchList.WatchPage">
+    <ContentPage.Resources>
+        <Style x:Key="ListStyle" TargetType="ListView">
+            <Setter Property="BackgroundColor" Value="PaleGoldenrod"/>
+        </Style>
+        <Style x:Key="MovieStyle" TargetType="Label">
+            <Setter Property="FontSize" Value="Micro"/>
+            <Setter Property="TextColor" Value="Black"/>
+        </Style>
+        <DataTemplate x:Key="MovieTemplate">
+            <ViewCell>
+                <StackLayout Margin="2">
+                    <StackLayout Orientation="Horizontal" Margin="2, 1">
+                        <Label Text="Title: " Style="{StaticResource MovieStyle}" />
+                        <Label Text="{Binding Path=Title}" Style="{StaticResource MovieStyle}"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="2, 1">
+                        <Label Text="Year: " Style="{StaticResource MovieStyle}"/>
+                        <Label Text="{Binding Path=Year}" Style="{StaticResource MovieStyle}"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="2, 1">
+                        <Label Text="Director: " Style="{StaticResource MovieStyle}"/>
+                        <Label Text="{Binding Path=Director}" Style="{StaticResource MovieStyle}"/>
+                    </StackLayout>
+                </StackLayout>
+            </ViewCell>
+        </DataTemplate>
+
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+
+        <Label Text="Welcome to the Movie Database"
+               HorizontalOptions="Center" Margin="0, 5"
+               Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+
+        <Image x:Name="imgMainPage" Grid.Row="1"
+               Grid.Column="1"  >
+            <Image.Source>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="Android" Value="film.png" />
+                    <On Platform="UWP" Value="Images/film.png" />
+                </OnPlatform>
+            </Image.Source>
+        </Image>
+
+        <ListView x:Name="lvMovies" Margin="3, 3, 3, 0"
+                  ItemSelected="lvMovie_ItemSelected"
+                  Grid.Row="1" Grid.Column="0"
+                  ItemTemplate="{StaticResource MovieTemplate}" 
+                  Style="{StaticResource ListStyle}"/>
+
+
+        <StackLayout x:Name="slOneElement" Grid.Row="1" 
+                     Grid.Column="1"
+                     Margin="10">
+            <StackLayout x:Name="slNonEdits">
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Title: " />
+                    <Label x:Name="lblTitle" Text="{Binding Path=Title}" />
+                </StackLayout>
+            </StackLayout>
+            <StackLayout x:Name="slEditable">
+                <StackLayout Orientation="Horizontal" >
+                    <Label Text="Year: " />
+                    <Label x:Name="entYear" 
+                           Text="{Binding Path=Year}"
+                            
+                           />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" >
+                    <Label Text="Description: " />
+                    <Label x:Name="entDescription" 
+                           Text="{Binding Path=Description}"
+                           
+                           />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" >
+                    <Label Text="Run Time: " />
+                    <Entry x:Name="entRunTime" 
+                           Text="{Binding Path=RunTime}"
+                            
+                           />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" >
+                    <Label Text="Country: " />
+                    <Entry x:Name="entCountry" 
+                           Text="{Binding Path=Country}"
+                            
+                           />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" >
+                    <Label Text="IMDB Rating: " />
+                    <Entry x:Name="entIMDBRating" 
+                           Text="{Binding Path=IMDBRating}"
+                            
+                           />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" >
+                    <Label Text="Starring: " />
+                    <Entry x:Name="entStarring" 
+                           Text="{Binding Path=Starring}"
+                            
+                           />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" >
+                    <Label Text="Director: " />
+                    <Entry x:Name="entDirector" 
+                           Text="{Binding Path=Director}"
+                            
+                           />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" >
+                    <Label Text="Boc Office: " />
+                    <Entry x:Name="entBoxOffice" 
+                           Text="{Binding Path=BoxOffice}"
+                           
+                           />
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+
+       
+
+        <StackLayout >
+            <Button Text="Add A Movie to Watch"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>
