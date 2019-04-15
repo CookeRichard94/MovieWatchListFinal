@@ -67,3 +67,17 @@ C:\Users\g00331787.GMADTREE\source\repos\MovieWatchList\MovieWatchList\MovieWatc
 \\gwstudent.gmadtree.gmit.ie\scistudss\G00331787\Documents\MovieWatchList\MovieWatchList\MovieWatchList\obj\Debug\netstandard2.0\XamlC.stamp
 \\gwstudent.gmadtree.gmit.ie\scistudss\G00331787\Documents\MovieWatchList\MovieWatchList\MovieWatchList\obj\Debug\netstandard2.0\MovieWatchList.dll
 \\gwstudent.gmadtree.gmit.ie\scistudss\G00331787\Documents\MovieWatchList\MovieWatchList\MovieWatchList\obj\Debug\netstandard2.0\MovieWatchList.pdb
+\\gwstudent.gmadtree.gmit.ie\scistudss\G00331787\Documents\Other\MovieWatchList\MovieWatchList\MovieWatchList\bin\Debug\netstandard2.0\MovieWatchList.deps.json
+\\gwstudent.gmadtree.gmit.ie\scistudss\G00331787\Documents\Other\MovieWatchList\MovieWatchList\MovieWatchList\bin\Debug\netstandard2.0\MovieWatchList.dll
+\\gwstudent.gmadtree.gmit.ie\scistudss\G00331787\Documents\Other\MovieWatchList\MovieWatchList\MovieWatchList\bin\Debug\netstandard2.0\MovieWatchList.pdb
+\\gwstudent.gmadtree.gmit.ie\scistudss\G00331787\Documents\Other\MovieWatchList\MovieWatchList\MovieWatchList\obj\Debug\netstandard2.0\MovieWatchList.csprojAssemblyReference.cache
+\\gwstudent.gmadtree.gmit.ie\scistudss\G00331787\Documents\Other\MovieWatchList\MovieWatchList\MovieWatchList\obj\Debug\netstandard2.0\App.xaml.g.cs
+\\gwstudent.gmadtree.gmit.ie\scistudss\G00331787\Documents\Other\MovieWatchList\MovieWatchList\MovieWatchList\obj\Debug\netstandard2.0\ListPage.xaml.g.cs
+\\gwstudent.gmadtree.gmit.ie\scistudss\G00331787\Documents\Other\MovieWatchList\MovieWatchList\MovieWatchList\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+\\gwstudent.gmadtree.gmit.ie\scistudss\G00331787\Documents\Other\MovieWatchList\MovieWatchList\MovieWatchList\obj\Debug\netstandard2.0\WatchPage.xaml.g.cs
+\\gwstudent.gmadtree.gmit.ie\scistudss\G00331787\Documents\Other\MovieWatchList\MovieWatchList\MovieWatchList\obj\Debug\netstandard2.0\MovieWatchList.csproj.CoreCompileInputs.cache
+\\gwstudent.gmadtree.gmit.ie\scistudss\G00331787\Documents\Other\MovieWatchList\MovieWatchList\MovieWatchList\obj\Debug\netstandard2.0\MovieWatchList.AssemblyInfoInputs.cache
+\\gwstudent.gmadtree.gmit.ie\scistudss\G00331787\Documents\Other\MovieWatchList\MovieWatchList\MovieWatchList\obj\Debug\netstandard2.0\MovieWatchList.AssemblyInfo.cs
+\\gwstudent.gmadtree.gmit.ie\scistudss\G00331787\Documents\Other\MovieWatchList\MovieWatchList\MovieWatchList\obj\Debug\netstandard2.0\XamlC.stamp
+\\gwstudent.gmadtree.gmit.ie\scistudss\G00331787\Documents\Other\MovieWatchList\MovieWatchList\MovieWatchList\obj\Debug\netstandard2.0\MovieWatchList.dll
+\\gwstudent.gmadtree.gmit.ie\scistudss\G00331787\Documents\Other\MovieWatchList\MovieWatchList\MovieWatchList\obj\Debug\netstandard2.0\MovieWatchList.pdb

@@ -832,11 +832,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "\\\\gwstudent.gmadtree.gmit.ie\\scistudss\\G00331787\\Documents\\MovieWatchList\\MovieWatchList\\MovieWatchList.Android\\MovieWatchList.Android.csproj",
+      "projectUniqueName": "\\\\gwstudent.gmadtree.gmit.ie\\scistudss\\G00331787\\Documents\\Other\\MovieWatchList\\MovieWatchList\\MovieWatchList.Android\\MovieWatchList.Android.csproj",
       "projectName": "MovieWatchList.Android",
-      "projectPath": "\\\\gwstudent.gmadtree.gmit.ie\\scistudss\\G00331787\\Documents\\MovieWatchList\\MovieWatchList\\MovieWatchList.Android\\MovieWatchList.Android.csproj",
+      "projectPath": "\\\\gwstudent.gmadtree.gmit.ie\\scistudss\\G00331787\\Documents\\Other\\MovieWatchList\\MovieWatchList\\MovieWatchList.Android\\MovieWatchList.Android.csproj",
       "packagesPath": "C:\\Users\\g00331787.GMADTREE\\.nuget\\packages\\",
-      "outputPath": "\\\\gwstudent.gmadtree.gmit.ie\\scistudss\\G00331787\\Documents\\MovieWatchList\\MovieWatchList\\MovieWatchList.Android\\obj\\",
+      "outputPath": "\\\\gwstudent.gmadtree.gmit.ie\\scistudss\\G00331787\\Documents\\Other\\MovieWatchList\\MovieWatchList\\MovieWatchList.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -853,8 +853,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "\\\\gwstudent.gmadtree.gmit.ie\\scistudss\\G00331787\\Documents\\MovieWatchList\\MovieWatchList\\MovieWatchList\\MovieWatchList.csproj": {
-              "projectPath": "\\\\gwstudent.gmadtree.gmit.ie\\scistudss\\G00331787\\Documents\\MovieWatchList\\MovieWatchList\\MovieWatchList\\MovieWatchList.csproj"
+            "\\\\gwstudent.gmadtree.gmit.ie\\scistudss\\G00331787\\Documents\\Other\\MovieWatchList\\MovieWatchList\\MovieWatchList\\MovieWatchList.csproj": {
+              "projectPath": "\\\\gwstudent.gmadtree.gmit.ie\\scistudss\\G00331787\\Documents\\Other\\MovieWatchList\\MovieWatchList\\MovieWatchList\\MovieWatchList.csproj"
             }
           }
         }

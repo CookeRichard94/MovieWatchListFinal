@@ -39,8 +39,32 @@ namespace MovieWatchList
         {
             // save the list of dogs to the local application folder
             MyUtils.SaveMovieListData(movieList);
+
+            RefreshListView();
         }
 
-        
+        private void WatchListButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RefreshListView()
+        {
+            lvMovies.ItemsSource = null;
+            lvMovies.ItemsSource = movieList;
+        }
+
+        private void DeleteContext_Clicked(object sender,
+                                           EventArgs e)
+        {
+            // really nice to get the object that was clicked.
+            Movie movie = (sender as MenuItem).CommandParameter as Movie;
+            movieList.Remove(movie);
+            //< MenuItem
+
+            RefreshListView();
+        }
+
+       
     }
 }

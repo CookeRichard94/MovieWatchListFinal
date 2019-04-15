@@ -89,42 +89,42 @@
                 </StackLayout>
                 <StackLayout Orientation="Horizontal" >
                     <Label Text="Run Time: " />
-                    <Entry x:Name="entRunTime" 
+                    <Label x:Name="entRunTime" 
                            Text="{Binding Path=RunTime}"
                             
                            />
                 </StackLayout>
                 <StackLayout Orientation="Horizontal" >
                     <Label Text="Country: " />
-                    <Entry x:Name="entCountry" 
+                    <Label x:Name="entCountry" 
                            Text="{Binding Path=Country}"
                             
                            />
                 </StackLayout>
                 <StackLayout Orientation="Horizontal" >
                     <Label Text="IMDB Rating: " />
-                    <Entry x:Name="entIMDBRating" 
+                    <Label x:Name="entIMDBRating" 
                            Text="{Binding Path=IMDBRating}"
                             
                            />
                 </StackLayout>
                 <StackLayout Orientation="Horizontal" >
                     <Label Text="Starring: " />
-                    <Entry x:Name="entStarring" 
+                    <Label x:Name="entStarring" 
                            Text="{Binding Path=Starring}"
                             
                            />
                 </StackLayout>
                 <StackLayout Orientation="Horizontal" >
                     <Label Text="Director: " />
-                    <Entry x:Name="entDirector" 
+                    <Label x:Name="entDirector" 
                            Text="{Binding Path=Director}"
                             
                            />
                 </StackLayout>
                 <StackLayout Orientation="Horizontal" >
                     <Label Text="Boc Office: " />
-                    <Entry x:Name="entBoxOffice" 
+                    <Label x:Name="entBoxOffice" 
                            Text="{Binding Path=BoxOffice}"
                            
                            />
@@ -134,8 +134,11 @@
 
        
 
-        <StackLayout >
-            <Button Text="Add A Movie to Watch"/>
+        <StackLayout Grid.Row="2" Grid.Column="1">
+            <Button x:Name="btnSaveFile" Text="Save" 
+                    Style="{StaticResource ButtonStyle}"
+                    Clicked="btnSaveFile_Clicked" Margin="2" />
+            
         </StackLayout>
     </Grid>
 </ContentPage>

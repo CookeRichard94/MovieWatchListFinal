@@ -16,6 +16,12 @@
         </Style>
         <DataTemplate x:Key="MovieTemplate">
             <ViewCell>
+                <ViewCell.ContextActions>
+                    <MenuItem Text="Delete" 
+                              Clicked="DeleteContext_Clicked"
+                              CommandParameter="{Binding .}"
+                              IsDestructive="True" />
+                </ViewCell.ContextActions>
                 <StackLayout Margin="2">
                     <StackLayout Orientation="Horizontal" Margin="2, 1">
                         <Label Text="Title: " Style="{StaticResource MovieStyle}" />
@@ -138,8 +144,9 @@
         </StackLayout>
 
         <StackLayout Grid.Row="2" Grid.Column="1">
-            <Button x:Name="SaveButton" Text="Save"/>
-            <Button x:Name="WatchListButton" Text="Add To Watch List" />
+            <Button x:Name="SaveButton" Text="Save" Clicked="btnSaveFile_Clicked"/>
+            <Button x:Name="WatchListButton" Text="Add To Watch List"  Clicked="WatchListButton_Clicked"/>
+            
         </StackLayout>
     </Grid>
 </ContentPage>
