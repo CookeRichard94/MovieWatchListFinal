@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MovieWatchList.WatchPage">
     <ContentPage.Resources>
+         <!--Styles-->
         <Style x:Key="ListStyle" TargetType="ListView">
             <Setter Property="BackgroundColor" Value="PaleGoldenrod"/>
         </Style>
@@ -10,8 +11,18 @@
             <Setter Property="FontSize" Value="Micro"/>
             <Setter Property="TextColor" Value="Black"/>
         </Style>
+        <Style x:Key="ButtonStyle" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="LimeGreen"/>
+        </Style>
+        <!--Template for the list view-->
         <DataTemplate x:Key="MovieTemplate">
             <ViewCell>
+                <ViewCell.ContextActions>
+                    <MenuItem Text="Delete" 
+                              Clicked="DeleteContext_Clicked"
+                              CommandParameter="{Binding .}"
+                              IsDestructive="True" />
+                </ViewCell.ContextActions>
                 <StackLayout Margin="2">
                     <StackLayout Orientation="Horizontal" Margin="2, 1">
                         <Label Text="Title: " Style="{StaticResource MovieStyle}" />
@@ -45,7 +56,8 @@
         <Label Text="Welcome to the Movie Database"
                HorizontalOptions="Center" Margin="0, 5"
                Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
-
+        
+        <!-- Output background image-->
         <Image x:Name="imgMainPage" Grid.Row="1"
                Grid.Column="1"  >
             <Image.Source>
@@ -76,57 +88,49 @@
                 <StackLayout Orientation="Horizontal" >
                     <Label Text="Year: " />
                     <Label x:Name="entYear" 
-                           Text="{Binding Path=Year}"
-                            
+                           Text="{Binding Path=Year}"                          
                            />
                 </StackLayout>
                 <StackLayout Orientation="Horizontal" >
                     <Label Text="Description: " />
                     <Label x:Name="entDescription" 
-                           Text="{Binding Path=Description}"
-                           
+                           Text="{Binding Path=Description}"                          
                            />
                 </StackLayout>
                 <StackLayout Orientation="Horizontal" >
                     <Label Text="Run Time: " />
                     <Label x:Name="entRunTime" 
-                           Text="{Binding Path=RunTime}"
-                            
+                           Text="{Binding Path=RunTime}"                           
                            />
                 </StackLayout>
                 <StackLayout Orientation="Horizontal" >
                     <Label Text="Country: " />
                     <Label x:Name="entCountry" 
-                           Text="{Binding Path=Country}"
-                            
+                           Text="{Binding Path=Country}"                            
                            />
                 </StackLayout>
                 <StackLayout Orientation="Horizontal" >
                     <Label Text="IMDB Rating: " />
                     <Label x:Name="entIMDBRating" 
-                           Text="{Binding Path=IMDBRating}"
-                            
+                           Text="{Binding Path=IMDBRating}"                            
                            />
                 </StackLayout>
                 <StackLayout Orientation="Horizontal" >
                     <Label Text="Starring: " />
                     <Label x:Name="entStarring" 
-                           Text="{Binding Path=Starring}"
-                            
+                           Text="{Binding Path=Starring}"                           
                            />
                 </StackLayout>
                 <StackLayout Orientation="Horizontal" >
                     <Label Text="Director: " />
                     <Label x:Name="entDirector" 
-                           Text="{Binding Path=Director}"
-                            
+                           Text="{Binding Path=Director}"                           
                            />
                 </StackLayout>
                 <StackLayout Orientation="Horizontal" >
                     <Label Text="Boc Office: " />
                     <Label x:Name="entBoxOffice" 
-                           Text="{Binding Path=BoxOffice}"
-                           
+                           Text="{Binding Path=BoxOffice}"                          
                            />
                 </StackLayout>
             </StackLayout>

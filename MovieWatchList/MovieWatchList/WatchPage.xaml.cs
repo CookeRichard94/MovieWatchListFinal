@@ -32,13 +32,31 @@ namespace MovieWatchList
 
         private void lvMovie_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-
+            slOneElement.BindingContext = (Movie)e.SelectedItem;
         }
 
         private void btnSaveFile_Clicked(object sender, EventArgs e)
         {
             // save the list of dogs to the local application folder
-            MyUtils.SaveMovieListData(movieList);
+            MyUtils.SaveMovieListData2(movieList);
         }
+
+        private void RefreshListView()
+        {
+            lvMovies.ItemsSource = null;
+            lvMovies.ItemsSource = movieList;
+        }
+
+        private void DeleteContext_Clicked(object sender,
+                                           EventArgs e)
+        {
+            // really nice to get the object that was clicked.
+            Movie movie = (sender as MenuItem).CommandParameter as Movie;
+            movieList.Remove(movie);
+            //< MenuItem
+
+            RefreshListView();
+        }
+
     }
 }

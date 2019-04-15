@@ -14,6 +14,12 @@
             <Setter Property="FontSize" Value="Small" />
             <Setter Property="TextColor" Value="Blue" />
         </Style>
+        <Style x:Key="ButtonStyle" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="LimeGreen"/>
+        </Style>
+        <Style x:Key="ButtonStyle2" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="Orange"/>
+        </Style>
         <DataTemplate x:Key="MovieTemplate">
             <ViewCell>
                 <ViewCell.ContextActions>
@@ -144,9 +150,9 @@
         </StackLayout>
 
         <StackLayout Grid.Row="2" Grid.Column="1">
-            <Button x:Name="SaveButton" Text="Save" Clicked="btnSaveFile_Clicked"/>
-            <Button x:Name="WatchListButton" Text="Add To Watch List"  Clicked="WatchListButton_Clicked"/>
-            
+            <Button x:Name="SaveButton" Text="Save" Clicked="btnSaveFile_Clicked" Style="{StaticResource ButtonStyle}"/>
+            <Button x:Name="WatchListButton" Text="Add To Watch List"  Clicked="WatchListButton_Clicked"
+                    Style="{StaticResource ButtonStyle2}"/>
         </StackLayout>
     </Grid>
 </ContentPage>

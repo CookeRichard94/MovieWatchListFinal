@@ -13,6 +13,7 @@ namespace Utils
         public const string JSON_MOVIE_FILE = "Movies.txt";
         public const string JSON_WATCH_FILE = "Watch.txt";
 
+        //reads data from json file movies.txt
         public static List<Movie> ReadMovieListData()
         {
             List<Movie> myList = new List<Movie>();
@@ -48,6 +49,7 @@ namespace Utils
             return myList;
         }
 
+        //reads the json data from watch.txt
         public static List<Movie> ReadWatchListData()
         {
             List<Movie> myList = new List<Movie>();
@@ -83,6 +85,7 @@ namespace Utils
             return myList;
         }
 
+        //saves data to movies.txt
         public static void SaveMovieListData(List<Movie> saveList)
         {
             // need the path to the file
@@ -98,6 +101,20 @@ namespace Utils
             }
         }
 
-
+        //Saves data to watch.txt
+        public static void SaveMovieListData2(List<Movie> saveList)
+        {
+            // need the path to the file
+            string path = Environment.GetFolderPath(
+                Environment.SpecialFolder.LocalApplicationData);
+            string filename = Path.Combine(path, JSON_WATCH_FILE);
+            // use a stream writer to write the list
+            using (var writer = new StreamWriter(filename, false))
+            {
+                // stringify equivalent
+                string jsonText = JsonConvert.SerializeObject(saveList);
+                writer.WriteLine(jsonText);
+            }
+        }
     }
 }

@@ -45,7 +45,7 @@ namespace MovieWatchList
 
         private void WatchListButton_Clicked(object sender, EventArgs e)
         {
-
+            //Code to add the json data from movies.txt to watch.txt
         }
 
         private void RefreshListView()
